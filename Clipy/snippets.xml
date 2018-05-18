@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<folders>
+	<folder>
+		<title>adb</title>
+		<snippets>
+			<snippet>
+				<title>tap menu key</title>
+				<content>adb shell input keyevent KEYCODE_MENU</content>
+			</snippet>
+			<snippet>
+				<title>open development option</title>
+				<content>adb shell am start -n com.android.settings/.DevelopmentSettings</content>
+			</snippet>
+			<snippet>
+				<title>open Androiid TV development option</title>
+				<content>$ adb -s xxx.xxx.xxx.xxx:5555 shell am start -n com.android.tv.settings/.system.DeveloperOptionsActivity</content>
+			</snippet>
+			<snippet>
+				<title>screenrecord</title>
+				<content>adb shell screenrecord /storage/emulated/0/test.mp4</content>
+			</snippet>
+			<snippet>
+				<title>mp4 to gif animation</title>
+				<content>ffmpeg -i test.mp4 -vf scale=320:-1 -r 60 output.gif</content>
+			</snippet>
+		</snippets>
+	</folder>
+	<folder>
+		<title>apksigner</title>
+		<snippets>
+			<snippet>
+				<title>verify v2</title>
+				<content>apksigner verify -v </content>
+			</snippet>
+		</snippets>
+	</folder>
+</folders>
