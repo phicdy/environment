@@ -38,7 +38,22 @@ Download [Clipy](https://clipy-app.com/) and import `Clipy/snippets.xml` from sn
 
 ## Alfred
 
-Download [Alfred](https://www.alfredapp.com/) and set up custome search
+Download [Alfred](https://www.alfredapp.com/) 
+
+### Custom Search
 
 * Android Developers: https://developer.android.com/reference/packages.html?q={query}
 * Weblio: http://ejje.weblio.jp/content/{query}
+
+### Android Screenshot
+
+1. Change adb path in `android_screenshot.sh`
+2. Copy `android_screenshot.sh` to `/usr/local/src/`
+3. Launch Automator
+4. Add new application
+5. Add 通知を表示
+6. Add シェルスクリプトを実行
+
+* シェル: /bin/bash
+* 入力の引き渡し方法: 引数として
+* `sh /usr/local/src/android_screenshot.sh`
