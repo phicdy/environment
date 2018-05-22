@@ -15,6 +15,7 @@ brew install tree
 brew install ffmpeg
 brew install tmux
 brew install wget
+brew install gsed
 
 # Python
 brew install python3
