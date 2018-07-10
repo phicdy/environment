@@ -2,6 +2,12 @@
 
 ## KeyBoard
 
+### キーボード設定
+
+* キーのリピートを最速に設定
+* リピート入力認識までの時間を最短に設定
+* 「F1, F2などのキーを標準のファンクションキーとして使用」にチェック
+
 ### Ergodox keymap
 
 ```bash
@@ -23,6 +29,7 @@ Download from https://pqrs.org/osx/karabiner/
 	* For Japanese
 		* Enable コマンドキーを単体で押したときに、英数・かなキーを送信する
 		* Enable 英数・かなキーをtoggle方式にする
+		* escキーを押したときに、英数キーも送信する（vim用）
 
 ### ShiftIt
 
@@ -31,6 +38,7 @@ Download from https://github.com/fikovnik/ShiftIt/releases
 * 環境設定 -> ショートカット
 	* 最大化: Alt + Command + ↑
 	* 右寄せ: Alt + Command + →
+	* 左寄せ: Alt + Command + ←
 
 ## Clipboard
 
