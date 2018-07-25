@@ -19,9 +19,10 @@ brew install gsed
 
 # Python
 brew install python3
-brew install flake8
-brew install pylint
-brew install yapf
+pip3 install --upgrade pip
+pip3 install flake8
+pip3 install pylint
+pip3 install yapf
 
 git clone https://github.com/phicdy/dotfiles.git
 cd dotfiles
