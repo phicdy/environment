@@ -14,8 +14,15 @@
 git clone https://github.com/phicdy/qmk_firmware
 cd qmk_firmware
 git checkout -b mykeymap remotes/origin/mykeymap
+
+# setup
+./util/qmk_install.sh
+
+# build
 make ergodox_ez:mykeymap
 ```
+
+If you want to edit keymap, edit `keyboards/ergodox_ez/keymaps/mykeymap/keymap.c`
 
 Apply generated `ergodox_ez_mykeymap.hex` by [Teesy Loader](https://www.pjrc.com/teensy/loader.html) 
 
