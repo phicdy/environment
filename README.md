@@ -38,7 +38,7 @@ Download from https://pqrs.org/osx/karabiner/
 		* Enable 英数・かなキーをtoggle方式にする
 		* escキーを押したときに、英数キーも送信する（vim用）
 
-### ShiftIt
+## ShiftIt
 
 Download from https://github.com/fikovnik/ShiftIt/releases
 
@@ -60,7 +60,7 @@ Download [Alfred](https://www.alfredapp.com/)
 * Android Developers: https://developer.android.com/reference/packages.html?q={query}
 * Weblio: http://ejje.weblio.jp/content/{query}
 
-### Android Screenshot
+## Android Screenshot
 
 1. Change adb path in `android_screenshot.sh`
 2. Copy `android_screenshot.sh` to `/usr/local/src/`
