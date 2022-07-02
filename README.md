@@ -72,3 +72,10 @@ Download [Alfred](https://www.alfredapp.com/)
 * シェル: /bin/bash
 * 入力の引き渡し方法: 引数として
 * `sh /usr/local/src/android_screenshot.sh`
+
+## Charles
+
+- Proxy -> SSL Proxying Settings -> SSL Proxying
+  - Enable SSL Proxying
+  - Include -> Add -> Set Host to "*" and OK
+- Help -> SSL Proxying -> Install Charles Root Certificate -> Open "Charles Proxy CA" in Keychain access -> Open "信頼" and edit "この証明書を使用するとき" to "常に信頼"
