@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <folders>
 	<folder>
+		<title>git</title>
+		<snippets>
+			<snippet>
+				<title>merge latest develop</title>
+				<content>git checkout develop &amp;&amp; git fetch --prune &amp;&amp; git merge origin/develop &amp;&amp; git branch --merged|egrep -v &apos;\*|develop|master&apos;|xargs git branch -d</content>
+			</snippet>
+		</snippets>
+	</folder>
+	<folder>
 		<title>adb</title>
 		<snippets>
 			<snippet>
@@ -12,16 +21,33 @@
 				<content>adb shell am start -n com.android.settings/.DevelopmentSettings</content>
 			</snippet>
 			<snippet>
-				<title>open Androiid TV development option</title>
-				<content>$ adb -s xxx.xxx.xxx.xxx:5555 shell am start -n com.android.tv.settings/.system.DeveloperOptionsActivity</content>
-			</snippet>
-			<snippet>
 				<title>screenrecord</title>
 				<content>adb shell screenrecord /storage/emulated/0/test.mp4</content>
 			</snippet>
 			<snippet>
 				<title>mp4 to gif animation</title>
 				<content>ffmpeg -i test.mp4 -vf scale=320:-1 -r 60 output.gif</content>
+			</snippet>
+			<snippet>
+				<title>launch activity</title>
+				<content>adb shell am start -n </content>
+			</snippet>
+		</snippets>
+	</folder>
+	<folder>
+		<title>gradle</title>
+		<snippets>
+			<snippet>
+				<title>rerun</title>
+				<content>./gradlew assembleDebug --rerun-tasks</content>
+			</snippet>
+			<snippet>
+				<title>release build</title>
+				<content>./gradlew app:assembleRelease</content>
+			</snippet>
+			<snippet>
+				<title>test</title>
+				<content>./gradlew testDebugUnitTest</content>
 			</snippet>
 		</snippets>
 	</folder>
@@ -30,7 +56,76 @@
 		<snippets>
 			<snippet>
 				<title>verify v2</title>
-				<content>apksigner verify -v </content>
+				<content>apksigner verify -v</content>
+			</snippet>
+		</snippets>
+	</folder>
+	<folder>
+		<title>markdown</title>
+		<snippets>
+			<snippet>
+				<title>table 2*2</title>
+				<content>|||
+|:-:|:-:|
+|||</content>
+			</snippet>
+		</snippets>
+	</folder>
+	<folder>
+		<title>junit</title>
+		<snippets>
+			<snippet>
+				<title>Theory</title>
+				<content>@RunWith(Theories::class)
+
+    companion object {
+        @DataPoints(&quot;testData&quot;)
+        @JvmField
+        val data = listOf(
+        )
+    }
+    
+    class TestData(
+    )
+    
+    @Theory
+    fun `when then`(
+            @FromDataPoints(&quot;testData&quot;) testData: TestData
+    ) {
+    }</content>
+			</snippet>
+			<snippet>
+				<title>Locale</title>
+				<content>private var defaultLocale: Locale? = null
+
+    @Before
+    fun setup() {
+        defaultLocale = Locale.getDefault()
+        Locale.setDefault(Locale(&quot;ja&quot;, &quot;JP&quot;))
+    }
+
+    @After
+    fun tearDown() {
+        defaultLocale?.let {
+            Locale.setDefault(it)
+        }
+    }</content>
+			</snippet>
+			<snippet>
+				<title>argument capture</title>
+				<content>val actions = mutableListOf&lt;Action&lt;*&gt;&gt;()
+val dispatcher = mockk&lt;ScreenInstanceDispatcher&gt; {
+    every { dispatch(capture(actions)) } just Runs
+}</content>
+			</snippet>
+		</snippets>
+	</folder>
+	<folder>
+		<title>android</title>
+		<snippets>
+			<snippet>
+				<title>change to English page</title>
+				<content>?hl=en</content>
 			</snippet>
 		</snippets>
 	</folder>
