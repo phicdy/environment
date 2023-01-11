@@ -79,3 +79,8 @@ Download [Alfred](https://www.alfredapp.com/)
   - Enable SSL Proxying
   - Include -> Add -> Set Host to "*" and OK
 - Help -> SSL Proxying -> Install Charles Root Certificate -> Open "Charles Proxy CA" in Keychain access -> Open "信頼" and edit "この証明書を使用するとき" to "常に信頼"
+
+## Firefox
+
+- about:config -> browser.search.openintab -> true
+- その他のツール -> ツールバーをカスタマイズ -> Add 検索 to toolbar
