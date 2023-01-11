@@ -38,11 +38,11 @@ Download from https://pqrs.org/osx/karabiner/
 		* Enable 英数・かなキーをtoggle方式にする
 		* escキーを押したときに、英数キーも送信する（vim用）
 
-## ShiftIt
+## Rectangle
 
-Download from https://github.com/fikovnik/ShiftIt/releases
+Download from https://rectangleapp.com/
 
-* 環境設定 -> ショートカット
+* 環境設定
 	* 最大化: Alt + Command + ↑
 	* 右寄せ: Alt + Command + →
 	* 左寄せ: Alt + Command + ←
