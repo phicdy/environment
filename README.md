@@ -57,7 +57,7 @@ Download [Alfred](https://www.alfredapp.com/)
 
 ### Custom Search
 
-* Android Developers: https://developer.android.com/reference/packages.html?q={query}
+* Android Developers: https://developer.android.com/s/results?q={query}
 * Weblio: http://ejje.weblio.jp/content/{query}
 
 ## Android Screenshot
