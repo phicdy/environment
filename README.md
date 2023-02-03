@@ -84,3 +84,8 @@ Download [Alfred](https://www.alfredapp.com/)
 
 - about:config -> browser.search.openintab -> true
 - その他のツール -> ツールバーをカスタマイズ -> Add 検索 to toolbar
+
+## Android Studio
+
+- Preferences | Editor | Code Style | KotlinのImportsでUse single name importにする。Packages to Use imports with '*'からすべて削除
+- Preferences | Editor | Design ToolsでOther Kotlin files以外のDefault Editor ModeをSplitに変更
