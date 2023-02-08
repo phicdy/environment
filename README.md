@@ -60,6 +60,12 @@ Download [Alfred](https://www.alfredapp.com/)
 * Android Developers: https://developer.android.com/s/results?q={query}
 * Weblio: http://ejje.weblio.jp/content/{query}
 
+### Fallback
+
+Add custom search URLs to fallbacks
+
+Features -> Default Results -> Fallbacks -> Only show fallbacks when there are no results -> Setup fallback results -> + -> Custom Search
+
 ## Android Screenshot
 
 1. Change adb path in `android_screenshot.sh`
